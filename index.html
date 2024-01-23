@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book library</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Button to add a new book -->
+      <button id="new-book-button">NEW BOOK</button>
+
+      <!-- Form to add a new book (initially hidden) -->
+      <div id="form-container" style="display: non">
+        <form id="book-form">
+          <!-- Form fields for book details -->
+          <div>
+            <label for="title">Title:</label>
+            <input type="text" id="title" required />
+          </div>
+          <div>
+            <label for="author">Author:</label>
+            <input type="text" id="author" required />
+          </div>
+          <div>
+            <label for="pages">Number of Pages:</label>
+            <input type="number" id="pages" required />
+          </div>
+
+          <div>
+            <label for="read">Read:</label>
+            <input type="checkbox" id="read" />
+          </div>
+          <div></div>
+
+          <!-- Submit button for the form -->
+          <button type="submit">Add Book</button>
+        </form>
+      </div>
+
+      <!-- Container for displaying books -->
+      <div id="library-container">
+        <!-- Books will be displayed here -->
+      </div>
+    </div>
+
+    
+  </body>
+
+  <script src="script.js"></script>
+</html>
