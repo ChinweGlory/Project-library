@@ -4,6 +4,19 @@
   box-sizing: border-box;
 }
 
+body {
+  background-image: url(resources/images/library.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode:hard-light;
+}
+
+.book-contents {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -29,11 +42,14 @@
   padding: 50px;
   align-items: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: rgba(127, 255, 212, 0.339);
+  border-radius: 10px;
 }
 
 label {
   display: inline;
-  font-weight: bold;
+  font-weight:bolder;
+
 }
 
 input {
@@ -48,11 +64,75 @@ input {
   align-items: center;
 }
 
-.submit {
+input[type ="submit"] {
   border: none;
   color: white;
   background-color: black;
   padding: 5px;
   border-radius: 5px;
   font-weight: 700;
+}
+
+#library-container {
+  font-size: x-large;
+  padding: 50px;
+  width: 350px;
+  height: 350px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  background-color:  rgba(127, 255, 212, 0.339);;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+p {
+    color: red;
+    font-size: 24px;
+}
+
+h1 {
+    color: blue;
+    font-style:oblique;
+    transition: width 5s, height 5s;
+    
+}
+
+h1:hover {
+    width: 400px;
+    height: 100px;
+}
+
+.read-button {
+    background-color: brown;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    font-size: 12px;
+    font-weight: bold;  
+}
+
+.toggle {
+    background-color: brown;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    font-size: 12px;
+    font-weight: bold;  
+}
+
+.card-content p{
+    color: black;
+}
+
+.book-title {
+    color: brown;
+    padding-bottom: 3px;
+}
+
+.book-author {
+    color:chartreuse
 }

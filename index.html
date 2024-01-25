@@ -7,19 +7,26 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="book-contents">
+        <div id="library-container" style="display: none;">
+            
+        </div>
     <div class="container">
-    <Button class="btn">New Book</Button>
+    
+    <h1>Welcome To My Book Library</h1>
+    <p><i>Click the <strong>Add new book</strong> button to fill <br> the book details</i></p>
+    <Button class="btn"> Add New Book</Button>
     <div class="form-container" style="display: none;">
-    <form action="" class="book-form">
-        <div class="title">
+    <form action="#" class="book-form">
+        <div>
         <label for="title">Title</label>
         <input type="text" id="title">
     </div>
-        <div class="author">
+        <div>
         <label for="author">Author</label>
         <input type="text" id="author">
     </div>
-        <div class="pages">
+        <div>
         <label for="pages">Pages</label>
         <input type="number" id="pages">
     </div>
@@ -27,15 +34,15 @@
         <label for="read">Read</label>
         <input type="checkbox" id="read">
         </div>
-        <div class="submit">
-            <button type="submit" class="submit">Add Book</button>
+        <div>
+            <input type="submit" value="Add Book">
         </div>
 
     </form>
 </div>
 </div>
-<div id="library-container"></div>
 
+</div>
 </body>
 
 
