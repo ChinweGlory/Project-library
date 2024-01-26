@@ -8,9 +8,9 @@ function Book(title, author, pages, read) {
   this.read = read;
 }
 
-Book.prototype.toggleReadStatus = function() {
-    this.read = !this.read;
-}
+Book.prototype.toggleReadStatus = function () {
+  this.read = !this.read;
+};
 
 function addBookToLibrary() {
   // do stuff here
@@ -65,8 +65,8 @@ function removeBook(index) {
 
 // Function to toggle the read status of a book
 function toggleReadStatus(index) {
-//   myLibrary[index].read = !myLibrary[index].read;
-myLibrary[index].toggleReadStatus();
+  //   myLibrary[index].read = !myLibrary[index].read;
+  myLibrary[index].toggleReadStatus();
   displayBooks();
 }
 
@@ -89,5 +89,4 @@ document
     event.preventDefault();
     addBookToLibrary();
     // libraryContainer.style.display = "block";
-    
   });
